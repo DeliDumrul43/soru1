@@ -1,0 +1,15 @@
+
+a = int(input("Lütfen 1. sayıyı giriniz : "))
+b = int(input("Lütfen 2. sayıyı giriniz : "))
+c = int(input("Lütfen 3. sayıyı giriniz : "))
+d = int(input("Lütfen 4. sayıyı giriniz : "))
+q = int(input("Lütfen 5. sayıyı giriniz : "))
+dizi = [a,b,c,d,q]
+
+dizi.sort(reverse=True)
+print(dizi)
+güsel = str(dizi)
+dosya = open("C:\Ogrenci\sıralama.txt","w")
+dosya.write(güsel)
+dosya.close()
+
